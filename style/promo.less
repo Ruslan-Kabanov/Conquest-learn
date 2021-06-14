@@ -1,0 +1,135 @@
+// main: style.less
+
+.promo {
+  background-color: @background-cacao;
+  width: 100%;
+}
+
+.promo__inner {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/img/el.png);
+  background-repeat: no-repeat;
+  background-position: 385px 0;
+}
+
+.promo__text {
+  padding: 236px 0 0 83px;
+  width: 435px;
+}
+
+.promo__title {
+  font-family: Playfair Display;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 60px;
+  color: @title-color;
+  margin-bottom: 16px;
+  position: relative;
+  margin: 2px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #8b8371;
+    width: 50px;
+    position: absolute;
+    top: 32px;
+    left: -65px;
+  }
+}
+
+.promo__subtitle {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: @title-color;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.promo__description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: fade(@title-color, 82%);
+  width: 258px;
+  margin: 0 0 56px 0;
+}
+
+.promo__link {
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: @footer-p-color;
+  padding: 25px 35px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: @button-dark;
+  }
+
+  &:active {
+    background-color: @nav-link-color;
+  }
+}
+
+.promo__img {
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13.5px;
+  padding-right: 15px;
+}
+
+.promo__img-descr {
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: @title-color;
+  position: relative;
+  align-self: flex-start;
+  margin-top: 121px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    border: 1px solid #8b8371;
+    width: 50px;
+    position: absolute;
+    top: 9px;
+    left: 110px;
+  }
+}
+
+.poromo__img-descr--right {
+  align-self: flex-end;
+  margin-bottom: 116px;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid #8b8371;
+    width: 50px;
+    position: absolute;
+    top: 9px;
+    right: 140px;
+  }
+}
