@@ -1,0 +1,64 @@
+// main: style.less
+
+.banner{
+    background:url(/img/Group\ 3.svg) right  no-repeat, linear-gradient(90deg, rgb(247, 245, 239) 38.5%, rgb(253, 253, 251) 38.5%);
+
+}
+
+
+
+.banner__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.banner__img{
+    padding-left: 80px;
+    margin-right: 70px;
+}
+
+.banner__descr{
+    padding-top: 88px;
+    padding-right: 124px;
+}
+
+.banner_title{
+    display: inline-block;
+    .h2-style();
+    margin-bottom: 38px;
+
+}
+
+.banner_subtitle{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+color: @footer-p-color;
+margin-bottom: 45px;
+}
+
+.button--bright{
+    background-color: @button-bright;
+    color: #fff;
+
+
+  &:hover {
+    background-color: darken(@button-bright, 8%) ;
+  }
+
+  &:active {
+    background-color: lighten(@button-bright, 3%);
+  }
+}
+
+.grad{
+    background: -webkit-linear-gradient(90deg, rgb(247, 245, 239) 30%, rgb(253, 253, 251) 30%);
+background: -moz-linear-gradient(90deg, rgb(247, 245, 239) 30%, rgb(253, 253, 251) 30%);
+background: linear-gradient(90deg, rgb(247, 245, 239) 30%, rgb(253, 253, 251) 30%);
+    width: 100%;
+    height: 300px;
+}

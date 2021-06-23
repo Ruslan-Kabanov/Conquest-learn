@@ -127,7 +127,7 @@
   width: 258px;
   margin: 0 0 56px 0;
 }
-.promo__link {
+.button {
   display: inline-block;
   font-family: Roboto;
   font-style: normal;
@@ -136,15 +136,17 @@
   line-height: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #444240;
   padding: 25px 35px;
   transition: 0.2s;
 }
-.promo__link:hover {
+.button--dark {
+  color: #fff;
+  background-color: #444240;
+}
+.button--dark:hover {
   background-color: #31302c;
 }
-.promo__link:active {
+.button--dark:active {
   background-color: #555248;
 }
 .promo__img {
@@ -297,6 +299,58 @@
 }
 .popular__item-link:active {
   color: #1b1a17;
+}
+.banner {
+  background: url(/img/Group\ 3.svg) right no-repeat, linear-gradient(90deg, #f7f5ef 38.5%, #fdfdfb 38.5%);
+}
+.banner__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.banner__img {
+  padding-left: 80px;
+  margin-right: 70px;
+}
+.banner__descr {
+  padding-top: 88px;
+  padding-right: 124px;
+}
+.banner_title {
+  display: inline-block;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  margin-bottom: 38px;
+}
+.banner_subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+  margin-bottom: 45px;
+}
+.button--bright {
+  background-color: #d4b098;
+  color: #fff;
+}
+.button--bright:hover {
+  background-color: #c89a7b;
+}
+.button--bright:active {
+  background-color: #d9b8a3;
+}
+.grad {
+  background: -webkit-linear-gradient(90deg, #f7f5ef 30%, #fdfdfb 30%);
+  background: -moz-linear-gradient(90deg, #f7f5ef 30%, #fdfdfb 30%);
+  background: linear-gradient(90deg, #f7f5ef 30%, #fdfdfb 30%);
+  width: 100%;
+  height: 300px;
 }
 @font-face {
   font-family: "rouble";
