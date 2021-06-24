@@ -434,6 +434,13 @@
   line-height: 14px;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 15px;
+  transition: 0.2s;
+}
+.main-footer__link:hover {
+  color: #fff;
+}
+.main-footer__link:active {
+  color: #a69876;
 }
 .main-footer__title {
   font-family: Roboto;
